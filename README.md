@@ -1,7 +1,7 @@
 # Projekt za pretraživanje serija. Web aplikacija napravljena pomoću node.js i angulara-a.
 
 
-__Za pokrenuti aplikaciju treba otvoriti terminal__
+__Za pokrenuti aplikaciju treba otvoriti terminal u visual studio code__
 
 Pozicionirati se gdje je __server__ direktorij smješten
 ```diff
