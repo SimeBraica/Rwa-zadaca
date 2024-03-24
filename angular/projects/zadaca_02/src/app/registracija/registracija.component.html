@@ -1,0 +1,36 @@
+ <h2>Registracija</h2>
+ <form method="POST"  (ngSubmit)="registriraj()">
+    <label for="ime">Ime</label>
+    <input type="text" name="ime" id="ime" required [(ngModel)]="ime">
+    <br>
+
+    <label for="prezime">Prezime</label>
+    <input type="text" name="prezime" id="prezime" required [(ngModel)]="prezime">
+    <br>
+
+    <label for="lozinka">Lozinka</label>
+    <input type="password" name="lozinka" id="lozinka" required [(ngModel)]="lozinka">
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required [(ngModel)]="email">
+    <br>
+
+    <label for="korime">Korisničko ime</label>
+    <input type="text" name="korime" id="korime" required [(ngModel)]="korime">
+    <br>
+
+    <label for="drzava">Država</label>
+    <input type="text" name="drzava" id="drzava" [(ngModel)]="drzava">
+    <br>
+
+    <label for="zupanija">Županija</label>
+    <input type="text" name="zupanija" id="zupanija" [(ngModel)]="zupanija">
+    <br>
+
+    <label for="grad">Grad</label>
+    <input type="text" name="grad" id="grad" [(ngModel)]="grad">
+    <br>
+
+    <input type="submit" value="Registriraj">
+  

@@ -1,0 +1,40 @@
+<div>
+    <label for="searchSeries">Pretrazi seriju: </label>
+    <input type="text" id="searchSeries" placeholder="Pretrazi">
+  </div>
+  
+  <div *ngIf="isLoading">Učitavanje...</div>
+  
+  <div *ngIf="series.length > 0">
+    <h2>Lista svih serija</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Jezik</th>
+          <th>Naslov original</th>
+          <th>Naslov</th>
+          <th>Opis</th>
+          <th>Poster</th>
+          <th>Datum</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let serie of series">
+          <td>{{ serie.id }}</td>
+          <td>{{ serie.original_language }}</td>
+          <td>{{ serie.original_name }}</td>
+          <td>{{ serie.name }}</td>
+          <td>{{ serie.overview }}</td>
+          <td><img [src]="'https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + serie.poster_path" width="100" [alt]="'slika_' + serie.title"/></td>
+          <td>{{ serie.first_air_date }}</td>
+          <td><button type="button" (click)="getIdSeries(serie.id)">Prikazi detalje</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div *ngIf="!isLoading && series.length === 0">
+    <p>Nije pronadena niti jedna serija</p>
+  </div>
+  

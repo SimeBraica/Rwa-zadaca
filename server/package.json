@@ -1,0 +1,20 @@
+{
+	"name": "zadaca_01",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.mjs",
+	"scripts": {
+		"pripremi": "npm link --save express sqlite3 express-session cookie-parser cors",
+		"start": "node server.mjs rwa_sbraica_conf.csv",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Sime Braica",
+	"license": "ISC",
+	"dependencies": {
+		"cookie-parser": "file:../../../../../usr/lib/node_modules/cookie-parser",
+		"cors": "file:../../../../../usr/lib/node_modules/cors",
+		"express": "file:../../../../../usr/lib/node_modules/express",
+		"express-session": "file:../../../../../usr/lib/node_modules/express-session",
+		"sqlite3": "file:../../../../../usr/lib/node_modules/sqlite3"
+	}
+}

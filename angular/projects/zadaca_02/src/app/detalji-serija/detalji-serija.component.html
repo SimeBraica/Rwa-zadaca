@@ -1,0 +1,29 @@
+<div id="sadrzajDetalji">
+    <h2>Detalji</h2>
+    <table *ngIf="fetchedData" border="1">
+      <tr>
+        <th>Naziv</th>
+        <th>Opis</th>
+        <th>Broj sezona</th>
+        <th>Broj epizoda</th>
+        <th>Popularnost</th>
+        <th>Poveznica</th>
+        <th>Slika</th>
+        <th>Prva emitiranja</th>
+      </tr>
+      <tr>
+        <td>{{ fetchedData.name }}</td>
+        <td>{{ fetchedData.overview }}</td>
+        <td>{{ fetchedData.number_of_seasons }}</td>
+        <td>{{ fetchedData.number_of_episodes }}</td>
+        <td>{{ fetchedData.popularity }}</td>
+        <td><a [href]="fetchedData.homepage">{{ fetchedData.homepage }}</a></td>
+        <td>
+          <img [src]="'https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + fetchedData.poster_path" 
+               width="100" [alt]="'slika_' + fetchedData.title" />
+        </td>
+        <td>{{ fetchedData.first_air_date }}</td>
+      </tr>
+    </table>
+  </div>
+  

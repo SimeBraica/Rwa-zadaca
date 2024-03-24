@@ -1,0 +1,23 @@
+<div>
+  <h2>Prijava</h2>
+  <form (ngSubmit)="prijavi()">
+    <div class="login-container">
+      <div>
+        <label for="username">Korisnicko ime:</label>
+        <input type="text" id="username" name="username" required [(ngModel)]="username">
+      </div>
+      <div>
+        <label for="password">Lozinka:</label>
+        <input type="password" id="password" name="password" required [(ngModel)]="password">
+      </div>
+      <button type="submit" id="submitButton">Login</button>
+    </div>
+  </form>
+
+
+  <div>Korisnicko ime: admin</div>
+  <div>Lozinka: rwa</div>
+
+  <div>Korisnicko ime: obican</div>
+  <div>Lozinka: rwa</div>
+</div>

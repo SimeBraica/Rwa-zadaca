@@ -1,0 +1,22 @@
+<div>
+    <label for="deleteUser">Delete User by Korime:</label>
+    <input type="text" id="deleteUser" [(ngModel)]="korimeToDelete" placeholder="Enter korime">
+    <button type="button" (click)="deleteUser()">Delete</button>
+  </div>
+  
+  <div *ngIf="users.length > 0">
+    <h2>Lista svih korisnika</h2>
+    <ul>
+      <li *ngFor="let user of users">
+        <strong>Korisnicko ime:</strong> {{ user.korime }} <br>
+        <strong>Ime:</strong> {{ user.ime }} <br>
+        <strong>Prezime:</strong> {{ user.prezime }} <br>
+        <hr>
+      </li>
+    </ul>
+  </div>
+  
+  <div *ngIf="users.length === 0">
+    <p>No users available.</p>
+  </div>
+  

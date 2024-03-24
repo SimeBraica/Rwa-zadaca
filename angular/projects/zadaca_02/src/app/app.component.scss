@@ -1,0 +1,60 @@
+@mixin nav-styling {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 8px 12px;
+      transition: background-color 0.3s, color 0.3s; 
+      &:hover {
+        background-color: black; 
+        color: white;
+      }
+    }
+  }
+  h1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+  }
+  body, html {
+    height: 90%;
+    margin: 0;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 80px; 
+    margin-top: 20px;
+  }
+  
+  nav {
+    @include nav-styling;
+  }
+
+  header, main, footer {
+    text-align: center;
+  }
+  
+  footer {
+    background-color:white;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
