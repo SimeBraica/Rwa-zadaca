@@ -22,5 +22,6 @@ Sada se mora pozicionirati gdje je __angular__ direktorij
 ```
 Te pokrenuti angular 
 ```diff
-+ ngserver zadaca_02
++ ng serve zadaca_02
 ```
+Sa ovime je aplikacija uspješno poslužena na adresi __localhost:4200__
