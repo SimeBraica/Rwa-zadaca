@@ -1,4 +1,4 @@
-Projekt za pretraživanje serija. Web aplikacija napravljena pomoću node.js i angulara-a.
+#Projekt za pretraživanje serija. Web aplikacija napravljena pomoću node.js i angulara-a.
 
 
 __Za pokrenuti aplikaciju treba otvoriti terminal__
